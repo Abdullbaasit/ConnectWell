@@ -1,0 +1,13 @@
+{
+  "name": "connectwell-ibadan",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix backend ci && npm --prefix frontend ci",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "test": "npm --prefix backend test",
+    "test:proxy": "node tests/proxy.mjs",
+    "build": "npm --prefix frontend run build"
+  }
+}
